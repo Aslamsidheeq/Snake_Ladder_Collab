@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Dice</title>
+    <link rel="stylesheet" href="style.css">
+  
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+</head>
+
+<body>
+    <div class="popup">
+        <h2>You have Subscribed</h2>
+        <br><br>
+        <button id="closebtn">Close</button>
+    </div>
+
+
+    <div class="cont">
+       
+         
+ 
+        <audio id="popupSound" src="Assets/sound.mp3"></audio>
+        <div class="box" id="b100">
+            <p class="showbtn hidden">Securing a Job in an MNC Company</p>
+
+        </div>
+        <div class="box" id="b99">
+            <p class="showbtn hidden"> 
+                Left Your Career 1
+                </p>
+        </div>
+        <div class="box" id="b98">
+            <p class="showbtn hidden">Mentoring Future Leaders</p>
+        </div>
+        <div class="box" id="b97">
+            <p class="showbtn hidden">Achieving Financial Freedom</p>
+        </div>
+        <div class="box" id="b96">
+            <p class="showbtn hidden">Becoming a Global Tech Leader</p>
+        </div>
+        <div class="box" id="b95">
+            <p class="showbtn hidden">Global Recognition</p>
+        </div>
+        <div class="box" id="b94">
+            <p class="showbtn hidden">Unexpected Challenge</p>
+        </div>
+        <div class="box" id="b93">
+            <p class="showbtn hidden">Building a Legacy</p>
+        </div>
+        <div class="box" id="b92">
+            <p class="showbtn hidden">Expanding Global Influence</p>
+        </div>
+        <div class="box" id="b91">
+            <p class="showbtn hidden">Securing Major Contracts</p>
+        </div>
+        <div class="box" id="b81">
+            <p class="showbtn hidden">Writing a Technical Book</p>
+        </div>
+        <div class="box" id="b82">
+            <p class="showbtn hidden">Investing in Startups</p>
+        </div>
+        <div class="box" id="b83">
+            <p class="showbtn hidden">Major Setback</p>
+        </div>
+        <div class="box" id="b84">
+            <p class="showbtn hidden">Speaking at Global Conferences</p>
+        </div>
+        <div class="box" id="b85">
+            <p class="showbtn hidden">Major Innovation</p>
+        </div>
+        <div class="box" id="b86">
+            <p class="showbtn hidden">Ladder: Starting a Consultancy</p>
+        </div>
+        <div class="box" id="b87">
+            <p class="showbtn hidden">Mentoring the Next Generation</p>
+        </div>
+        <div class="box" id="b88">
+            <p class="showbtn hidden">
+                Becoming a Board Member</p>
+        </div>
+        <div class="box" id="b89">
+            <p class="showbtn hidden">Market Fluctuations</p>
+        </div>
+        <div class="box" id="b90">
+            <p class="showbtn hidden">Leading Industry Initiatives</p>
+        </div>
+        <div class="box" id="b80">
+            <p class="showbtn hidden">Becoming a Tech Influencer</p>
+        </div>
+        <div class="box" id="b79">
+            <p class="showbtn hidden">Economic Downturn</p>
+        </div>
+        <div class="box" id="b78">
+            <p class="showbtn hidden">Gaining Global Recognition</p>
+        </div>
+        <div class="box" id="b77">
+            <p class="showbtn hidden">Publishing Technical Papers</p>
+        </div>
+        <div class="box" id="b76">
+            <p class="showbtn hidden">Mentoring Startups</p>
+        </div>
+        <div class="box" id="b75">
+            <p class="showbtn hidden">Industry Awards</p>
+        </div>
+        <div class="box" id="b74">
+            <p class="showbtn hidden">Becoming a Senior Architect</p>
+        </div>
+        <div class="box" id="b73">
+            <p class="showbtn hidden">Burnout</p>
+        </div>
+        <div class="box" id="b72">
+            <p class="showbtn hidden">Building a High- Performance Team</p>
+        </div>
+        <div class="box" id="b71">
+            <p class="showbtn hidden">Joining a Prestigious Tech Company</p>
+        </div>
+        <div class="box" id="b61">
+            <p class="showbtn hidden">Becoming a Project Manager</p>
+        </div>
+        <div class="box" id="b62">
+            <p class="showbtn hidden">Learning Business Acumen</p>
+        </div>
+        <div class="box" id="b63">
+            <p class="showbtn hidden">Poor Decision Making</p>
+        </div>
+        <div class="box" id="b64">
+            <p class="showbtn hidden">Overseeing Product Development</p>
+        </div>
+        <div class="box" id="b65">
+            <p class="showbtn hidden">Product Success</p>
+        </div>
+        <div class="box" id="b66">
+            <p class="showbtn hidden">Specializing in AI/ML</p>
+        </div>
+        <div class="box" id="b67">
+            <p class="showbtn hidden">Contributing to Research</p>
+        </div>
+        <div class="box" id="b68">
+            <p class="showbtn hidden">Becoming a Tech Thought Leader</p>
+        </div>
+        <div class="box" id="b69">
+            <p class="showbtn hidden">Market Misalignment   </p>
+        </div>
+        <div class="box" id="b70">
+            <p class="showbtn hidden">Gaining Industry Recognition</p>
+        </div>
+        <div class="box" id="b60">
+            <p class="showbtn hidden">Achieving Team Success</p>
+        </div>
+        <div class="box" id="b59">
+            <p class="showbtn hidden">Starting a Major Tech Initiative</p>
+        </div>
+        <div class="box" id="b58">
+            <p class="showbtn hidden">Mastering DevOps Practices</p>
+        </div>
+        <div class="box" id="b57">
+            <p class="showbtn hidden">Learning Advanced Cloud Deployment</p>
+        </div>
+        <div class="box" id="b56">
+            <p class="showbtn hidden">Leading a Development Team</p>
+        </div>
+        <div class="box" id="b55">
+            <p class="showbtn hidden">Leadership Skills</p>
+        </div>
+        <div class="box" id="b54">
+            <p class="showbtn hidden">Misaligned Career Goal </p>
+        </div>
+        <div class="box" id="b53">
+            <p class="showbtn hidden">Speaking at confidence</p>
+        </div>
+        <div class="box" id="b52">
+            <p class="showbtn hidden">Building a Personal Brand</p>
+        </div>
+        <div class="box" id="b51">
+            <p class="showbtn hidden">Mentoring Junior Developers</p>
+        </div>
+        <div class="box" id="b41">
+            <p class="showbtn hidden">Learning UI/UX Design</p>
+        </div>
+        <div class="box" id="b42">
+            <p class="showbtn hidden">                Gaining Experience in System Design
+                </p>
+        </div>
+        <div class="box" id="b43">
+            <p class="showbtn hidden">
+                Project Failure
+                </p>
+        </div>
+        <div class="box" id="b44">
+            <p class="showbtn hidden">Mastering Agile Methodologies</p>
+        </div>
+        <div class="box" id="b45">
+            <p class="showbtn hidden">Successful Project Delivery</p>
+        </div>
+        <div class="box" id="b46">
+            <p class="showbtn hidden">Learning Cloud Technologies</p>
+        </div>
+        <div class="box" id="b47">
+            <p class="showbtn hidden">Contributing to Open Source</p>
+        </div>
+        <div class="box" id="b48">
+            <p class="showbtn hidden">Specializing in a Tech Stack</p>
+        </div>
+        <div class="box" id="b49">
+            <p class="showbtn hidden">Skill Stagnation</p>
+        </div>
+        <div class="box" id="b50">
+            <p class="showbtn hidden">Promotion to Senior Developer</p>
+        </div>
+        <div class="box" id="b40">
+            <p class="showbtn hidden">Becoming a Full Stock Developer</p>
+        </div>
+        <div class="box" id="b39">
+            <p class="showbtn hidden">Burnout</p>
+        </div>
+        <div class="box" id="b38">
+            <p class="showbtn hidden">Learning Backend Technologies</p>
+        </div>
+        <div class="box" id="b37">
+            <p class="showbtn hidden">Learning Frontend Technologies</p>
+        </div>
+        <div class="box" id="b36">
+            <p class="showbtn hidden">Transitioning to Mid-Level Developer</p>
+        </div>
+        <div class="box" id="b35">
+            <p class="showbtn hidden">Certification</p>
+        </div>
+        <div class="box" id="b34">
+            <p class="showbtn hidden">Getting Certified in Software Engineering</p>
+        </div>
+        <div class="box" id="b33">
+            <p class="showbtn hidden">Overconfidence</p>
+        </div>
+        <div class="box" id="b32">
+            <p class="showbtn hidden">Receiving Positive Feedback</p>
+        </div>
+        <div class="box" id="b31">
+            <p class="showbtn hidden">Completing First Major Project</p>
+        </div>
+        <div class="box" id="b21">
+            <p class="showbtn hidden">Completing Probation Period</p>
+        </div>
+        <div class="box" id="b22">
+            <p class="showbtn hidden">Advanced Coding Skills</p>
+        </div>
+        <div class="box" id="b23">
+            <p class="showbtn hidden">Learning Version Control (Git)</p>
+        </div>
+        <div class="box" id="b24">
+            <p class="showbtn hidden">Miscommunication</p>
+        </div>
+        <div class="box" id="b25">
+            <p class="showbtn hidden">Starting Side Projects</p>
+        </div>
+        <div class="box" id="b26">
+            <p class="showbtn hidden">Mentorship</p>
+        </div>
+        <div class="box" id="b27">
+            <p class="showbtn hidden">Mastering Software Engineering Fundamentals</p>
+        </div>
+        <div class="box" id="b28">
+            <p class="showbtn hidden">Understanding SDLC</p>
+        </div>
+        <div class="box" id="b29">
+            <p class="showbtn hidden">Exploring Agile Methodologies</p>
+        </div>
+        <div class="box" id="b30">
+            <p class="showbtn hidden">Attending Industry Conferences</p>
+        </div>
+        <div class="box" id="b20">
+            <p class="showbtn hidden">Introduction to Agile</p>
+        </div>
+        <div class="box" id="b19">
+            <p class="showbtn hidden">Onboarding Process</p>
+        </div>
+        <div class="box" id="b18">
+            <p class="showbtn hidden">Starting as a Junior Developer</p>
+        </div>
+        <div class="box" id="b17">
+            <p class="showbtn hidden">Joining Our Bootcamp</p>
+        </div>
+        <div class="box" id="b16">
+            <p class="showbtn hidden">Struggling to Find a Job</p>
+        </div>
+        <div class="box" id="b15">
+            <p class="showbtn hidden">Taking a Wrong Course</p>
+        </div>
+        <div class="box" id="b14">
+            <p class="showbtn hidden">Poor Interview Performance</p>
+        </div>
+        <div class="box" id="b13">
+            <p class="showbtn hidden">Job Interviews</p>
+        </div>
+        <div class="box" id="b12">
+            <p class="showbtn hidden">Applying for Jobs</p>
+        </div>
+        <div class="box" id="b11">
+            <p class="showbtn hidden">Lack of Focus</p>
+        </div>
+        <div class="box" id="b01">
+            <p class="showbtn hidden">
+                Start
+            </p>
+            <p id="p1"></p>
+            <p id="p2"></p>
+
+        </div>
+        <div class="box" id="b02">
+            <p class="showbtn hidden">
+                Attending Seminars
+            </p>
+        </div>
+        <div class="box" id="b03">
+            <p class="showbtn hidden">
+                Participating in Workshops
+            </p>
+        </div>
+        <div class="box" id="b04">
+            <p class="showbtn hidden">Engaging in Internships</p>
+        </div>
+        <div class="box" id="b05">
+            <p class="showbtn hidden">Networking at Events</p>
+        </div>
+        <div class="box" id="b06">
+            <p class="showbtn hidden">Industrial Visit</p>
+        </div>
+        <div class="box" id="b07">
+            <p class="showbtn hidden">Campus Placement</p>
+        </div>
+        <div class="box" id="b08">
+            <p class="showbtn hidden">Gaining Soft Skills</p>
+        </div>
+        <div class="box" id="b09">
+            <p class="showbtn hidden">Learning Industry Tools</p>
+        </div>
+        <div class="box" id="b10">
+            <p class="showbtn hidden">Collaborating on Projects</p>
+        </div>
+
+
+    </div>
+
+    <img class="" src="img/ladder.jpg" alt="">
+
+    <script>
+
+
+  // JavaScript to handle popup functionality
+  let boxes = document.querySelectorAll(".box");
+        let closebtn = document.getElementById("closebtn");
+        let popup = document.querySelector(".popup");
+        let popupHeading = popup.querySelector("h2");
+        let popupSound = document.getElementById("popupSound");
+         
+        let timeout;
+
+        // Show popup when a box is clicked
+        boxes.forEach((box) => {
+            box.addEventListener("click", () => {
+                let hiddenText = box.querySelector(".showbtn").textContent; // Get content from hidden <p>
+                popupHeading.textContent = hiddenText; // Set dynamic content
+
+                popup.classList.remove("hide");
+                popup.classList.add("show");
+                popup.style.display = "block"; // Display popup
+           
+
+                // Play the popup sound
+                popupSound.currentTime = 0; // Reset to start
+                popupSound.play();
+
+                // Auto-close popup after 5 seconds
+                clearTimeout(timeout);
+                timeout = setTimeout(() => {
+                    closePopup();
+                }, 4000);
+            });
+        });
+
+        // Close popup when "Close" button is clicked
+        closebtn.addEventListener("click", closePopup);
+
+        // Close popup when clicking outside of it
+        document.addEventListener("click", (event) => {
+            if (popup.classList.contains("show") && !popup.contains(event.target) && !event.target.closest(".box")) {
+                closePopup();
+            }
+        });
+
+        // Close popup function
+        function closePopup() {
+            popup.classList.add("hide");
+            setTimeout(() => {
+                popup.style.display = "none";
+                popup.classList.remove("show", "hide");
+            
+            }, 200); // Match fade-out duration
+        }
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
