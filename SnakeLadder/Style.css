@@ -1,0 +1,361 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  /* place-items: center; */
+  justify-content: center;
+  height: 100vh;
+  overflow-x: scroll;
+  background-color: lightgrey;
+}
+.box:hover
+{
+cursor: pointer;
+border: 1px solid white;
+
+}
+/* .container-fluid{
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 13px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+.container-fluid::-webkit-scrollbar {
+  display: none;
+} */
+.cont {
+  display: grid;
+  /* width: 600px; */
+  grid-template-columns: repeat(10, 1fr);
+  margin: 0px 0 0px 0;
+  z-index: 1px;
+}
+.hidden
+{
+ visibility: hidden;
+}
+
+
+.cont div {
+  width: 107px;
+  height: 71.5px;
+   /* border: 0.2px solid black;  */
+}
+
+img {
+  position: relative;
+  top: -715px;
+  left: 0px;
+  height: 715px;
+  z-index: -1;
+  margin: 0;
+  overflow: scroll;
+}
+
+
+#diceCont {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  font-size: 2rem;
+  z-index: 99;
+}
+#diceBtn {
+  z-index: 99;
+  padding: 5px;
+  cursor: pointer;
+  background-color: rgb(75, 140, 197);
+  border-radius: 5px;
+  width: 200px;
+}
+
+/* @media (max-width: 1250px) {
+  
+  #diceCont {
+    display: flex;
+    place-items: none;
+    top: 92vh;
+    left: 36vw;
+    border: 2px solid red;
+  }
+  #diceBtn {
+    width: 200px;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 1250px) {
+  
+  #diceCont {
+    display: flex;
+    place-items: none;
+    top: 99vh;
+    left: 10vw;
+    /* border: 2px solid red; 
+  }
+  #diceBtn {
+    width: 200px;
+    margin-left: 20px;
+  }
+} */
+
+
+
+.scene {
+width: 50px; /* Scene matches cube size */
+height: 50px;
+margin: 50px auto;
+perspective: 600px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cube {
+width: 50px;
+height: 50px;
+position: relative;
+transform-style: preserve-3d;
+transform: translateZ(-25px);
+transition: transform 1s;
+cursor: pointer;
+}
+
+.cube.show-1 {
+transform: translateZ(-25px) rotateY(0deg);
+}
+.cube.show-2 {
+transform: translateZ(-25px) rotateY(-180deg);
+}
+.cube.show-3 {
+transform: translateZ(-25px) rotateY(-90deg);
+}
+.cube.show-4 {
+transform: translateZ(-25px) rotateY(90deg);
+}
+.cube.show-5 {
+transform: translateZ(-25px) rotateX(-90deg);
+}
+.cube.show-6 {
+transform: translateZ(-25px) rotateX(90deg);
+}
+
+.cube__face {
+position: absolute;
+width: 50px;
+height: 50px;
+background: rgb(255, 255, 255);
+border: 2px solid rgb(0, 0, 0);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap; /* Arrange dots in a grid */
+}
+
+.cube__face--1 {
+transform: rotateY(0deg) translateZ(25px);
+}
+.cube__face--2 {
+transform: rotateY(180deg) translateZ(25px);
+}
+.cube__face--3 {
+transform: rotateY(90deg) translateZ(25px);
+}
+.cube__face--4 {
+transform: rotateY(-90deg) translateZ(25px);
+}
+.cube__face--5 {
+transform: rotateX(90deg) translateZ(25px);
+}
+.cube__face--6 {
+transform: rotateX(-90deg) translateZ(25px);
+}
+
+/* Dot Styling */
+.dot {
+width: 7px; /* Size of the dots */
+height: 7px;
+background: rgb(0, 0, 0);
+border-radius: 50%; /* Make it circular */
+position: absolute;
+}
+
+/* Positioning dots for each face */
+.cube__face--1 .dot {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.cube__face--2 .dot:nth-child(1) {
+top: 20%;
+left: 20%;
+}
+.cube__face--2 .dot:nth-child(2) {
+top: 80%;
+left: 80%;
+}
+
+.cube__face--3 .dot:nth-child(1) {
+top: 20%;
+left: 20%;
+}
+.cube__face--3 .dot:nth-child(2) {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.cube__face--3 .dot:nth-child(3) {
+top: 80%;
+left: 80%;
+}
+
+.cube__face--4 .dot:nth-child(1) {
+top: 20%;
+left: 20%;
+}
+.cube__face--4 .dot:nth-child(2) {
+top: 20%;
+left: 80%;
+}
+.cube__face--4 .dot:nth-child(3) {
+top: 80%;
+left: 20%;
+}
+.cube__face--4 .dot:nth-child(4) {
+top: 80%;
+left: 80%;
+}
+
+.cube__face--5 .dot:nth-child(1) {
+top: 20%;
+left: 20%;
+}
+.cube__face--5 .dot:nth-child(2) {
+top: 20%;
+left: 80%;
+}
+.cube__face--5 .dot:nth-child(3) {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.cube__face--5 .dot:nth-child(4) {
+top: 80%;
+left: 20%;
+}
+.cube__face--5 .dot:nth-child(5) {
+top: 80%;
+left: 80%;
+}
+
+.cube__face--6 .dot:nth-child(1) {
+top: 20%;
+left: 20%;
+}
+.cube__face--6 .dot:nth-child(2) {
+top: 20%;
+left: 80%;
+}
+.cube__face--6 .dot:nth-child(3) {
+top: 50%;
+left: 20%;
+}
+.cube__face--6 .dot:nth-child(4) {
+top: 50%;
+left: 80%;
+}
+.cube__face--6 .dot:nth-child(5) {
+top: 80%;
+left: 20%;
+}
+.cube__face--6 .dot:nth-child(6) {
+top: 80%;
+left: 80%;
+}
+
+
+
+/* popup */
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+h2 {
+  color: rgb(139, 52, 52);
+  text-align: center;
+}
+
+.popup {
+  z-index: 1;
+  background-color: #fafafa;
+  width: 50%;
+  height: 40%;
+  border-radius: 20px;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s ease; /* Smooth fade-in/out */
+}
+
+.popup.show {
+  display: block; /* Show the popup */
+  opacity: 1; /* Fully visible */
+}
+
+.popup.hide {
+  opacity: 0; /* Fade out */
+  transition: opacity 1s ease; /* Smooth fade-out */
+}
+
+.showbtn {
+  margin: 200px auto;
+  border: 2px solid black;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#closebtn {
+margin-top: 10px; /* Space above the button */
+margin-bottom: 4px; /* Space below the button */
+display: block; /* Ensures it's treated as a block element */
+margin-left: auto; /* Center horizontally */
+margin-right: auto; /* Center horizontally */
+}
+
+
+button {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 5px;
+  height: 36px;
+  width: 77px;
+  border: none;
+  transition-duration: 0.5s;
+  font-size: 17px;
+}
+
+button:hover {
+  background-color: rgb(113, 140, 139);
+  color: white;
+}
+.popup h1{
+  margin-top:10%;
+}
