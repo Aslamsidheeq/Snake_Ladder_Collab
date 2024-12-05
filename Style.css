@@ -15,23 +15,10 @@ body {
 
 .box:hover {
   cursor: pointer;
-  border: 1px solid ghostwhite;
+  /* border: 1px solid ghostwhite; */
 
 }
-
-/* .container-fluid{
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 13px;
-  overflow-y: scroll;
-  overflow-x: scroll;
-}
-.container-fluid::-webkit-scrollbar {
-  display: none;
-} */
+ 
 .cont {
   display: grid;
   /* width: 600px; */
@@ -81,35 +68,7 @@ img {
   width: 200px;
 }
 
-/* @media (max-width: 1250px) {
-  
-  #diceCont {
-    display: flex;
-    place-items: none;
-    top: 92vh;
-    left: 36vw;
-    border: 2px solid red;
-  }
-  #diceBtn {
-    width: 200px;
-    margin-left: 20px;
-  }
-}
-@media (max-width: 1250px) {
-  
-  #diceCont {
-    display: flex;
-    place-items: none;
-    top: 99vh;
-    left: 10vw;
-    /* border: 2px solid red; 
-  }
-  #diceBtn {
-    width: 200px;
-    margin-left: 20px;
-  }
-} */
-
+ 
 
 .scene {
   width: 50px;
@@ -131,6 +90,20 @@ img {
   transition: transform 1s;
   cursor: pointer;
 }
+
+.shadow {
+  width: 50px;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  position: absolute;
+  top: 60px; /* Adjust based on dice position */
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 
 .cube.show-1 {
   transform: translateZ(-25px) rotateY(0deg);
@@ -162,6 +135,7 @@ img {
   height: 50px;
   background: rgb(255, 255, 255);
   border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,9 +169,9 @@ img {
 
 /* Dot Styling */
 .dot {
-  width: 7px;
+  width: 9px;
   /* Size of the dots */
-  height: 7px;
+  height: 9px;
   background: rgb(0, 0, 0);
   border-radius: 50%;
   /* Make it circular */
@@ -212,105 +186,105 @@ img {
 }
 
 .cube__face--2 .dot:nth-child(1) {
-  top: 20%;
-  left: 20%;
+  top: 27%;
+  left: 27%;
 }
 
 .cube__face--2 .dot:nth-child(2) {
-  top: 80%;
-  left: 80%;
+  top: 60%;
+  left: 55%;
 }
 
 .cube__face--3 .dot:nth-child(1) {
-  top: 20%;
-  left: 20%;
+  top: 19%;
+  left: 19%;
 }
 
 .cube__face--3 .dot:nth-child(2) {
-  top: 50%;
-  left: 50%;
+  top: 52%;
+  left: 51%;
   transform: translate(-50%, -50%);
 }
 
 .cube__face--3 .dot:nth-child(3) {
-  top: 80%;
-  left: 80%;
+  top: 65%;
+  left: 65%;
 }
 
 .cube__face--4 .dot:nth-child(1) {
-  top: 20%;
-  left: 20%;
+  top: 22%;
+  left: 19%;
 }
 
 .cube__face--4 .dot:nth-child(2) {
-  top: 20%;
-  left: 80%;
+  top: 22%;
+  left: 65%;
 }
 
 .cube__face--4 .dot:nth-child(3) {
-  top: 80%;
-  left: 20%;
+  top: 65%;
+  left: 19%;
 }
 
 .cube__face--4 .dot:nth-child(4) {
-  top: 80%;
-  left: 80%;
+  top: 65%;
+  left: 65%;
 }
 
 .cube__face--5 .dot:nth-child(1) {
-  top: 20%;
-  left: 20%;
+  top: 18%;
+  left: 15%;
 }
 
 .cube__face--5 .dot:nth-child(2) {
-  top: 20%;
-  left: 80%;
+  top: 18%;
+  left: 70%;
 }
 
 .cube__face--5 .dot:nth-child(3) {
-  top: 50%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .cube__face--5 .dot:nth-child(4) {
-  top: 80%;
-  left: 20%;
+  top: 70%;
+  left: 15%;
 }
 
 .cube__face--5 .dot:nth-child(5) {
-  top: 80%;
-  left: 80%;
+  top: 70%;
+  left: 70%;
 }
 
 .cube__face--6 .dot:nth-child(1) {
-  top: 20%;
-  left: 20%;
+  top: 13%;
+  left: 18%;
 }
 
 .cube__face--6 .dot:nth-child(2) {
-  top: 20%;
-  left: 80%;
+  top: 13%;
+  left: 65%;
 }
 
 .cube__face--6 .dot:nth-child(3) {
-  top: 50%;
-  left: 20%;
+  top: 43%;
+  left: 18%;
 }
 
 .cube__face--6 .dot:nth-child(4) {
-  top: 50%;
-  left: 80%;
+  top: 43%;
+  left: 65%;
 }
 
 .cube__face--6 .dot:nth-child(5) {
-  top: 80%;
-  left: 20%;
+  top: 70%;
+  left: 18%;
 }
 
 .cube__face--6 .dot:nth-child(6) {
-  top: 80%;
-  left: 80%;
+  top: 70%;
+  left: 65%;
 }
 
 
@@ -328,7 +302,7 @@ h2 {
 }
 
 .popup {
-  z-index: 1;
+  z-index: 2;
   background-color: ghostwhite;
   padding: 20px;
   /* Add padding to prevent content from touching edges */
@@ -429,7 +403,7 @@ button:hover {
 
 .popup p {
   margin-bottom: 40px;
-  text-align: justify;
+  text-align: center;
 }
 
 .form-container {
@@ -486,3 +460,26 @@ button:hover {
   height: 60%;
   padding: 15px;
 }
+
+/* pointer */
+#p1
+  {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: hsla(268, 97%, 15%, 0.652);
+  position: relative;
+  border: 3px solid rgb(129, 122, 255);
+
+  /* position: absolute; */
+}
+
+#p1 {
+  position: absolute;
+  top: 645px;
+  transition: all linear 1s;
+  /* top: 0; */
+  left: 265px;
+  z-index: 1;
+}
+ 
