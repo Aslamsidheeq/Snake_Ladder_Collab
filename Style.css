@@ -13,6 +13,101 @@ body {
   background-color: ghostwhite;
 }
 
+/* ------------------------------------- */
+.login_popup{
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+}
+.login_popup .box{
+  background-color: #fff;
+  padding: 0 10px;
+  width: 875px;
+  height: 600px;
+  border-radius: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.login_content{
+  text-align: left;
+}
+
+.inputfeilds{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputfeildsOne{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.login_popup.anyname{
+  /* visibility: visible; */
+  opacity: 1;
+}
+.login_popup.anyname .box{
+  margin-left: 0;
+  opacity: 1;
+}
+.login_popup .box .form{
+  padding: 40px 30px;
+}
+.login_popup .box .form h1{
+  color: #000;
+  font-size: 30px;
+  margin: 20px 0 30px;
+  text-align: center;
+
+}
+.popup_input{
+  height: 45px;
+  margin-bottom: 30px;
+  width: 300px;
+  margin-right: 15px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 15px;
+  color: #cccc;
+
+}
+.popup_input:focus{
+  outline: none;
+}
+label{
+  font-size: 18px;
+  color: #555;
+}
+.btn{
+  width: 100%;
+  background-color: #e91e63;
+  margin-top: 30px;
+  height: 45px;
+  border-radius: 25px;
+  font-size: 25px;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+}
+.close{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+
 .box:hover {
   cursor: pointer;
   /* border: 1px solid ghostwhite; */
@@ -133,8 +228,10 @@ img {
   position: absolute;
   width: 50px;
   height: 50px;
-  background: rgb(255, 255, 255);
-  border: 2px solid rgb(0, 0, 0);
+  background: red;
+  /* background: rgb(255, 255, 255); */
+  border: 2px solid red;
+  /* border: 2px solid rgb(0, 0, 0); */
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -172,7 +269,8 @@ img {
   width: 9px;
   /* Size of the dots */
   height: 9px;
-  background: rgb(0, 0, 0);
+  background: whitesmoke;
+  /* background: rgb(0, 0, 0); */
   border-radius: 50%;
   /* Make it circular */
   position: absolute;
@@ -396,16 +494,17 @@ button:hover {
   margin-top: 2%;
   margin-bottom: 5px;
 }
+/* 
 .form-container h2 {
   margin-top: 6%;
   margin-bottom: 40px;
-}
+} */
 
 .popup p {
   margin-bottom: 40px;
   text-align: center;
 }
-
+/* 
 .form-container {
   z-index: 9;
   background-color: ghostwhite;
@@ -419,7 +518,6 @@ button:hover {
   transform: translate(-50%, -50%);
   display: none;
   opacity: 0;
-  /* Hidden by default */
   transition: opacity 0.2s ease;
 }
 
@@ -434,7 +532,7 @@ button:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
+} */
 
 .submit {
   margin-top: 4%;
@@ -442,16 +540,16 @@ button:hover {
   background-color: #007BFF;
 }
 
-.btnLogin:hover,
+
 .submit:hover {
   background-color: #0056b3;
 }
 
 /* Add visible state for the popup */
-.form-container.show {
+/* .form-container.show {
   display: block;
   opacity: 1;
-}
+} */
 
 .txt {
   width: 50%;

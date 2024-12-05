@@ -1,4 +1,50 @@
 
+var popup_login = document.getElementById('popup_form');
+var close = document.getElementById('close_btn');
+
+window.addEventListener("load", function () {
+
+  setTimeout(function () {
+
+    popup_login.classList.add('anyname');
+
+  }, 1000) // 1 secon is 1000ms so 5 second is = to 5000ms.
+
+
+}) // 5 second popup are working count our time and check it now 
+// create close btn event
+close.addEventListener("click", function () {
+  popup_login.classList.remove('anyname');
+  closePopuptwo()
+}) //friends create 5 second popup form you are check for pouse video check the and after i am close btn is work properly 
+// now add transition
+
+function closePopuptwo() {
+  popup_login.classList.add("hide");
+  setTimeout(() => {
+    popup_login.style.display = "none";
+    popup_login.classList.remove("show", "hide");
+  }, 200); // Match fade-out duration
+}
+
+$("#form").submit((e) => {
+  e.preventDefault()
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbwuu0OLgOtENX7Thc-2XYgGMK9LcNtpcTgESQruM8rmYQ_BLRCVC-pZY4rRqXjoVyq7/exec",
+    data: $("#form").serialize(),
+    method: "post",
+    success: function (response) {
+      alert("Form submitted successfully! Now you can use the die.")
+      window.location.href = "index.html";
+    },
+    error: function (err) {
+      alert("Something Error")
+
+    }
+  })
+})
+
+
 // JavaScript to handle popup functionality
 let boxes = document.querySelectorAll(".box");
 let closebtn = document.getElementById("closebtn");
@@ -241,19 +287,3 @@ form.addEventListener("submit", (e) => {
   formSubmitted = true; // Mark the form as submitted
 });
 
-$("#form").submit((e) => {
-  e.preventDefault()
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbwuu0OLgOtENX7Thc-2XYgGMK9LcNtpcTgESQruM8rmYQ_BLRCVC-pZY4rRqXjoVyq7/exec",
-    data: $("#form").serialize(),
-    method: "post",
-    success: function (response) {
-      alert("Form submitted successfully! Now you can use the die.")
-      window.location.href = "index.html";
-    },
-    error: function (err) {
-      alert("Something Error")
-
-    }
-  })
-})
