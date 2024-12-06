@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
 
     popup_login.classList.add('anyname');
 
-  }, 1000) // 1 secon is 1000ms so 5 second is = to 5000ms.
+  }, 2500) // 1 secon is 1000ms so 5 second is = to 5000ms.
 
 
 }) // 5 second popup are working count our time and check it now 
@@ -35,7 +35,8 @@ $("#form").submit((e) => {
     method: "post",
     success: function (response) {
       alert("Form submitted successfully! Now you can use the die.")
-      window.location.href = "index.html";
+      closePopuptwo()
+      // window.location.href = "index.html";
     },
     error: function (err) {
       alert("Something Error")
@@ -271,19 +272,4 @@ cube.addEventListener("click", rollDice);
 /////sssssssssssssssssssssssssssssssssssss
 
 //----------------------- Form Submission Logic ---------------------------
-
-const loginBtn = document.getElementById("loginBtn");
-const popupForm = document.getElementById("popupForm");
-const form = document.getElementById("form");
-
-// Show popup on clicking the login button
-
-
-// Handle form submission
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); // Prevent default form submission behavior
-  popupForm.classList.remove("show"); // Hide the popup
-  loginBtn.style.display = "none"; // Hide the login button
-  formSubmitted = true; // Mark the form as submitted
-});
 

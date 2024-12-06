@@ -10,7 +10,12 @@ body {
   justify-content: center;
   height: 100vh;
   overflow: hidden;
-  background-color: ghostwhite;
+ background-image: url("img/background.jpg");
+  /* background-size: cover; */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 /* ------------------------------------- */
@@ -19,11 +24,11 @@ body {
   height: 100%;
   padding: 0 10px;
 }
-.login_popup .box{
+.login_popup .boxLogin{
   background-color: #fff;
   padding: 0 10px;
-  width: 875px;
-  height: 600px;
+  width: 1405px;
+  height: 695px;
   border-radius: 20px;
   position: absolute;
   left: 50%;
@@ -31,6 +36,10 @@ body {
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: all 1s ease-in-out;
+  z-index: 6;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 .login_content{
@@ -54,14 +63,14 @@ body {
   /* visibility: visible; */
   opacity: 1;
 }
-.login_popup.anyname .box{
+.login_popup.anyname .boxLogin{
   margin-left: 0;
   opacity: 1;
 }
-.login_popup .box .form{
-  padding: 40px 30px;
+.login_popup .boxLogin .formc{
+  padding: 20px 100px;
 }
-.login_popup .box .form h1{
+.login_popup .boxLogin .formc h1{
   color: #000;
   font-size: 30px;
   margin: 20px 0 30px;
